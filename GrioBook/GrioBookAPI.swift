@@ -17,9 +17,14 @@ final class GrioBookAPI {
     static let sharedInstance = GrioBookAPI()
     
     private let apiUrl = "https://griobook-lkeude96.c9users.io/api/books/"
-    
+//    private var cachedBookList: [Book] = []
     
     func getBooks(completion: [Book] -> Void) {
+        
+//        if cachedBookList.count > 0 && !(Reachability.isConnectedToNetwork()) {
+//            completion(cachedBookList)
+//        }
+        
         get() { JSON in
             if let result = JSON {
                 let bookArray = result as! [JSONObject]
@@ -27,7 +32,7 @@ final class GrioBookAPI {
                 for book in bookArray {
                     books.append(Book(book: book))
                 }
-                
+//                self.cachedBookList = books
                 completion(books)
             }
         }

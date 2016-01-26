@@ -25,9 +25,22 @@ class BookViewController: UIViewController, UIWebViewDelegate {
         let url = NSURL(string: bookUrl)!
         let request = NSURLRequest(URL: url)
         
-        cachePage(bookUrl)
         
-        self.bookWebView.loadRequest(request)
+        if Reachability.isConnectedToNetwork() == true {
+            print("Internet connection OK")
+            cachePage(bookUrl)
+            self.bookWebView.loadRequest(request)
+
+        } else {
+            print("Internet connection FAILED")
+            let alert = UIAlertController(title: "No Internet Connection", message: "Make sure your device is connected to the internet.", preferredStyle: .Alert)
+            let okAction = UIAlertAction(title: "OK", style: .Default) { (action) in
+                print(action)
+            }
+            alert.addAction(okAction)
+            self.presentViewController(alert, animated: true, completion: nil)
+            
+        }
     }
     
     func cachePage(urlToCache: String) {
