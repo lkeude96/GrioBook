@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Mattress
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        let kB = 1024
+        let MB = 1024 * kB
+        let GB = 1024 * MB
+        let isOfflineHandler: (() -> Bool) = {
+            return Reachability.isConnectedToNetwork()
+        }
+        let urlCache = Mattress.URLCache(memoryCapacity: 20 * MB, diskCapacity: 20 * MB, diskPath: nil,
+            mattressDiskCapacity: 1 * GB, mattressDiskPath: nil, mattressSearchPathDirectory: .DocumentDirectory,
+            isOfflineHandler: isOfflineHandler)
+        
+        NSURLCache.setSharedURLCache(urlCache)
+        
         return true
     }
 

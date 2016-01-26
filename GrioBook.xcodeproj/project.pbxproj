@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DEF6CA3AC87952C37A3C100 /* Pods_GrioBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D5620ADC4D32898DFC1F29 /* Pods_GrioBook.framework */; };
+		88546B9B1C576ED600BF6A9F /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88546B9A1C576ED600BF6A9F /* Book.swift */; };
+		88546B9D1C57750300BF6A9F /* GrioBookAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88546B9C1C57750300BF6A9F /* GrioBookAPI.swift */; };
 		88BFEED51C56D2B600BBDE2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFEED41C56D2B600BBDE2B /* AppDelegate.swift */; };
-		88BFEED71C56D2B600BBDE2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFEED61C56D2B600BBDE2B /* ViewController.swift */; };
 		88BFEEDA1C56D2B600BBDE2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88BFEED81C56D2B600BBDE2B /* Main.storyboard */; };
 		88BFEEDC1C56D2B600BBDE2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88BFEEDB1C56D2B600BBDE2B /* Assets.xcassets */; };
 		88BFEEDF1C56D2B600BBDE2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88BFEEDD1C56D2B600BBDE2B /* LaunchScreen.storyboard */; };
 		88BFEEEA1C56D2B600BBDE2B /* GrioBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFEEE91C56D2B600BBDE2B /* GrioBookTests.swift */; };
+		88BFEEF51C56D52600BBDE2B /* BookListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFEEF41C56D52600BBDE2B /* BookListTableViewController.swift */; };
+		88BFEEF71C56E0E900BBDE2B /* BookListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFEEF61C56E0E900BBDE2B /* BookListTableViewCell.swift */; };
+		88BFEEF91C56E3FB00BBDE2B /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFEEF81C56E3FB00BBDE2B /* BookViewController.swift */; };
+		88DAA4C81C57F80A009846CF /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DAA4C71C57F80A009846CF /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +32,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E7E1C2EB118173416EECFFD /* Pods-GrioBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrioBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-GrioBook/Pods-GrioBook.release.xcconfig"; sourceTree = "<group>"; };
+		7160D61642FA257F7B2C20D5 /* Pods-GrioBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrioBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GrioBook/Pods-GrioBook.debug.xcconfig"; sourceTree = "<group>"; };
+		88546B9A1C576ED600BF6A9F /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		88546B9C1C57750300BF6A9F /* GrioBookAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrioBookAPI.swift; sourceTree = "<group>"; };
 		88BFEED11C56D2B600BBDE2B /* GrioBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrioBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88BFEED41C56D2B600BBDE2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		88BFEED61C56D2B600BBDE2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		88BFEED91C56D2B600BBDE2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88BFEEDB1C56D2B600BBDE2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88BFEEDE1C56D2B600BBDE2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +45,11 @@
 		88BFEEE51C56D2B600BBDE2B /* GrioBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrioBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88BFEEE91C56D2B600BBDE2B /* GrioBookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrioBookTests.swift; sourceTree = "<group>"; };
 		88BFEEEB1C56D2B600BBDE2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88BFEEF41C56D52600BBDE2B /* BookListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookListTableViewController.swift; sourceTree = "<group>"; };
+		88BFEEF61C56E0E900BBDE2B /* BookListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookListTableViewCell.swift; sourceTree = "<group>"; };
+		88BFEEF81C56E3FB00BBDE2B /* BookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
+		88DAA4C71C57F80A009846CF /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		D5D5620ADC4D32898DFC1F29 /* Pods_GrioBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrioBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DEF6CA3AC87952C37A3C100 /* Pods_GrioBook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +71,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D36B274EFAF99F18E71E204 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5D5620ADC4D32898DFC1F29 /* Pods_GrioBook.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D74AC108F0A77F164E5C36E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7160D61642FA257F7B2C20D5 /* Pods-GrioBook.debug.xcconfig */,
+				2E7E1C2EB118173416EECFFD /* Pods-GrioBook.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		88546B991C576E6C00BF6A9F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				88BFEEF41C56D52600BBDE2B /* BookListTableViewController.swift */,
+				88BFEEF81C56E3FB00BBDE2B /* BookViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 		88BFEEC81C56D2B600BBDE2B = {
 			isa = PBXGroup;
 			children = (
 				88BFEED31C56D2B600BBDE2B /* GrioBook */,
 				88BFEEE81C56D2B600BBDE2B /* GrioBookTests */,
 				88BFEED21C56D2B600BBDE2B /* Products */,
+				7D74AC108F0A77F164E5C36E /* Pods */,
+				7D36B274EFAF99F18E71E204 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +120,13 @@
 		88BFEED31C56D2B600BBDE2B /* GrioBook */ = {
 			isa = PBXGroup;
 			children = (
+				88DAA4C61C57D73A009846CF /* Models */,
+				88DAA4C51C57D732009846CF /* Views */,
+				88546B991C576E6C00BF6A9F /* View Controllers */,
 				88BFEED41C56D2B600BBDE2B /* AppDelegate.swift */,
-				88BFEED61C56D2B600BBDE2B /* ViewController.swift */,
+				88546B9C1C57750300BF6A9F /* GrioBookAPI.swift */,
 				88BFEED81C56D2B600BBDE2B /* Main.storyboard */,
+				88DAA4C71C57F80A009846CF /* Reachability.swift */,
 				88BFEEDB1C56D2B600BBDE2B /* Assets.xcassets */,
 				88BFEEDD1C56D2B600BBDE2B /* LaunchScreen.storyboard */,
 				88BFEEE01C56D2B600BBDE2B /* Info.plist */,
@@ -96,6 +143,22 @@
 			path = GrioBookTests;
 			sourceTree = "<group>";
 		};
+		88DAA4C51C57D732009846CF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				88BFEEF61C56E0E900BBDE2B /* BookListTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		88DAA4C61C57D73A009846CF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				88546B9A1C576ED600BF6A9F /* Book.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +166,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88BFEEEE1C56D2B600BBDE2B /* Build configuration list for PBXNativeTarget "GrioBook" */;
 			buildPhases = (
+				7C2E1C99DCB67C2B1835A18D /* Check Pods Manifest.lock */,
 				88BFEECD1C56D2B600BBDE2B /* Sources */,
 				88BFEECE1C56D2B600BBDE2B /* Frameworks */,
 				88BFEECF1C56D2B600BBDE2B /* Resources */,
+				A0B83FB79EC9B7BD7A0E387B /* Embed Pods Frameworks */,
+				776630DE99946D940D11E0DD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,13 +260,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		776630DE99946D940D11E0DD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GrioBook/Pods-GrioBook-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C2E1C99DCB67C2B1835A18D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A0B83FB79EC9B7BD7A0E387B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GrioBook/Pods-GrioBook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		88BFEECD1C56D2B600BBDE2B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88BFEED71C56D2B600BBDE2B /* ViewController.swift in Sources */,
+				88DAA4C81C57F80A009846CF /* Reachability.swift in Sources */,
+				88BFEEF71C56E0E900BBDE2B /* BookListTableViewCell.swift in Sources */,
+				88BFEEF91C56E3FB00BBDE2B /* BookViewController.swift in Sources */,
 				88BFEED51C56D2B600BBDE2B /* AppDelegate.swift in Sources */,
+				88546B9B1C576ED600BF6A9F /* Book.swift in Sources */,
+				88546B9D1C57750300BF6A9F /* GrioBookAPI.swift in Sources */,
+				88BFEEF51C56D52600BBDE2B /* BookListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +444,7 @@
 		};
 		88BFEEEF1C56D2B600BBDE2B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7160D61642FA257F7B2C20D5 /* Pods-GrioBook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GrioBook/Info.plist;
@@ -336,6 +456,7 @@
 		};
 		88BFEEF01C56D2B600BBDE2B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E7E1C2EB118173416EECFFD /* Pods-GrioBook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GrioBook/Info.plist;
@@ -388,6 +509,7 @@
 				88BFEEF01C56D2B600BBDE2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88BFEEF11C56D2B600BBDE2B /* Build configuration list for PBXNativeTarget "GrioBookTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +518,7 @@
 				88BFEEF31C56D2B600BBDE2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
